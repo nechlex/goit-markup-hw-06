@@ -35,7 +35,7 @@ address {
 }
 
 .container {
-    max-width: 1440px;
+    max-width: 1158px;
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
@@ -44,6 +44,7 @@ address {
 .header {
     padding-top: 24px;
     padding-bottom: 24px;
+    border-bottom: 1px solid #e7e9fc;
 }
 
 .header-navigation {
@@ -91,6 +92,8 @@ address {
 
 .hero-section {
     background: #2e2f42;
+    padding-top: 188px;
+    padding-bottom: 188px;
 }
 
 .hero-title {
@@ -102,7 +105,6 @@ address {
         text-align: center;
         color: #fff;
         margin-bottom: 48px;
-        padding-top: 188px;
 }
 
 .order-button {
@@ -113,7 +115,6 @@ address {
         color: #fff;
     background: #4d5ae5;
     cursor: pointer;
-    margin-bottom: 188px;
 }
 
 .order-button:hover,
@@ -163,6 +164,10 @@ address {
     background: #fff;
 }
 
+.block-team {
+    padding: 32px 16px;
+}
+
 .team-name {
     font-weight: 500;
         font-size: 20px;
@@ -184,6 +189,13 @@ address {
 .portfolio-section {
     padding-top: 120px;
     padding-bottom: 120px;
+}
+
+.block-portfolio {
+border-bottom: 1px solid #e7e9fc;
+padding-top: 32px;
+padding-bottom: 32px;
+padding-left: 16px;
 }
 
 .portfolio-title {

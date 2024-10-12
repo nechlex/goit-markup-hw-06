@@ -53,6 +53,7 @@ img {
 .header-navigation {
     color: #2e2f42;
     display: flex;
+    align-items: center;
 }
 
 .container-navigation {
@@ -153,6 +154,7 @@ img {
     border: none;
     display: block;
     margin: 0 auto;
+    min-width: 169px;
 }
 
 .order-button:hover,
@@ -161,8 +163,8 @@ img {
 }
 
 .services-section {
-    margin-bottom: 120px;
-    margin-top: 120px;
+    padding-bottom: 120px;
+    padding-top: 120px;
 }
 
 .visually-hidden {
@@ -222,15 +224,17 @@ img {
 
 .team-list {
     display: flex;
-    gap: 32px;
+    gap: 24px;
 }
 
 .team-item {
     background: #fff;
+    border-radius: 0px 0px 4px 4px;
+    flex-basis: calc((100% - 3 * 24px) / 4)
 }
 
 .block-team {
-    padding: 32px 16px;
+    padding: 32px 0px;
 }
 
 .team-name {
@@ -268,9 +272,7 @@ img {
 
 .block-portfolio {
 border-bottom: 1px solid #e7e9fc;
-padding-top: 32px;
-padding-bottom: 32px;
-padding-left: 16px;
+padding: 32px 16px
 }
 
 .portfolio-title {
@@ -303,6 +305,8 @@ font-family: "Raleway", sans-serif;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4d5ae5;
+    display: inline-block;
+    margin-bottom: 16px;
 }
 
 .footer-highlight {
@@ -314,6 +318,5 @@ font-family: "Raleway", sans-serif;
         line-height: 1.5;
         letter-spacing: 0.02em;
         color: #f4f4fd;
-        padding-top: 16px;
         max-width: 264px;
 }

@@ -51,6 +51,8 @@ img {
 
 .header {
   border-bottom: 1px solid #e7e9fc;
+  box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 2px 1px 0 rgba(46, 47, 66, 0.08);
 }
 
 .header-navigation {
@@ -99,12 +101,18 @@ img {
   position: relative;
 }
 
+.active {
+  color: #404bbf;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .active::after {
   content: "";
   width: 100%;
   display: block;
   height: 4px;
   background-color: #404bbf;
+  color: ;
   border-radius: 2px;
   position: absolute;
   left: 0;
@@ -119,6 +127,10 @@ img {
 .header-contacts-list {
   display: flex;
   gap: 40px;
+}
+
+.header-contacts-item {
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-contacts-link {
@@ -179,11 +191,12 @@ img {
   display: block;
   margin: 0 auto;
   min-width: 169px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .order-button:hover,
 .order-button:focus {
-  background: #404bbf;
+  background-color: #404bbf;
 }
 
 .services-section {
@@ -222,6 +235,7 @@ img {
   border-radius: 4px;
   width: 264px;
   height: 112px;
+  margin-bottom: 8px;
 }
 
 .services-item-icon {
@@ -235,7 +249,6 @@ img {
   letter-spacing: 0.02em;
   color: #2e2f42;
   margin-bottom: 8px;
-  margin-top: 8px;
 }
 
 .services-description {
@@ -279,6 +292,10 @@ img {
   padding: 32px 0px;
 }
 
+.social-link {
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .team-name {
   font-weight: 500;
   font-size: 20px;
@@ -312,9 +329,7 @@ img {
   top: 0;
   width: 100%;
   height: 100%;
-  padding-left: 32px;
-  padding-right: 32px;
-  padding-top: 40px;
+  padding: 40px 32px;
   transform: translateY(100%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -332,6 +347,7 @@ img {
 
 .portfolio-item {
   flex-basis: calc((100% - 2 * 24px) / 3);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .block-portfolio {
@@ -405,6 +421,11 @@ img {
   padding-bottom: 100px;
 }
 
+.f-logo {
+  align-items: baseline;
+  margin-right: 120px;
+}
+
 .footer-logo {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -446,6 +467,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-list-footer {
@@ -453,7 +475,7 @@ img {
   align-items: center;
   justify-content: center;
   flex-direction: row;
-  gap: 24px;
+  gap: 16px;
   margin-top: 8px;
 }
 
@@ -465,10 +487,6 @@ img {
 .social-link-footer:hover,
 .social-link-footer:focus {
   background-color: #31d0aa;
-}
-
-.footer-soc-block {
-  margin-left: 120px;
 }
 
 .footer-soc-text {

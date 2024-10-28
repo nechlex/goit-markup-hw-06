@@ -621,7 +621,9 @@ img {
   cursor: pointer;
   border: 1px solid rgba(0, 0, 0, 0.1);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
   padding: 0;
 }
 
@@ -685,7 +687,11 @@ img {
   margin-bottom: 4px;
 }
 .modal-field {
-  margin-bottom: 16px;
+  margin-bottom: 8px;
+}
+
+.modal-field-l {
+  margin-bottom: 24px;
 }
 
 .input-wrapper {

@@ -28,8 +28,8 @@
             >Web<span class="header-highlight">Studio</span></a
           >
           <ul class="header-menu-list">
-            <li class="header-menu-item">
-              <a class="header-menu-link active" href="./index.html">Studio</a>
+            <li>
+              <a class="header-menu-item active" href="./index.html">Studio</a>
             </li>
             <li class="header-menu-item">
               <a class="header-menu-link" href="">Portfolio</a>
@@ -54,10 +54,89 @@
             </li>
           </ul>
         </address>
+        <button class="burger-btn" type="button">
+          <svg class="burger-icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-burger"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="mobile-menu">
+        <div class="container mobile-menu-container">
+          <div class="menu-nav-wrap">
+            <button type="button" class="mobile-menu-close">
+              <svg class="cross-icon" width="8" height="8">
+                <use href="./images/icons.svg#icon-cross"></use>
+              </svg>
+            </button>
+            <nav class="mobile-menu-nav">
+              <ul class="menu-navigation-list-container">
+                <li>
+                  <a
+                    class="menu-navigation-list menu-nav-current"
+                    href="./index.html"
+                    >Studio</a
+                  >
+                </li>
+                <li><a class="menu-navigation-list" href="">Portfolio</a></li>
+                <li><a class="menu-navigation-list" href="">Contacts</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="menu-cont-wrap">
+            <address>
+              <ul class="menu-contacts-list-container">
+                <li>
+                  <a
+                    class="menu-navigation-contacts menu-cont-current"
+                    href="tel:+110001111111"
+                    >+11 (000) 111-11-11</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="menu-navigation-contacts"
+                    href="mailto:info@devstudio.com"
+                    >info@devstudio.com</a
+                  >
+                </li>
+              </ul>
+            </address>
+            <ul class="menu-icon-links">
+              <li class="menu-icon-link-wrap">
+                <a class="menu-icon-link" href="https://www.instagram.com/">
+                  <svg class="menu-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="menu-icon-link-wrap">
+                <a class="menu-icon-link" href="https://x.com/">
+                  <svg class="menu-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="menu-icon-link-wrap">
+                <a class="menu-icon-link" href="https://www.facebook.com/">
+                  <svg class="menu-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="menu-icon-link-wrap">
+                <a class="menu-icon-link" href="https://www.linkedin.com/">
+                  <svg class="menu-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
 
-    <main class="main">
+    <main class="main m-hiden">
       <section class="hero-section">
         <div class="container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
@@ -420,7 +499,7 @@
       </section>
     </main>
 
-    <footer class="footer">
+    <footer class="footer m-hiden">
       <div class="container footer-container">
         <div class="f-logo">
           <a class="footer-logo" href="./index.html"
@@ -487,7 +566,7 @@
         </div>
       </div>
     </footer>
-    <div class="backdrop">
+    <div class="backdrop m-hiden">
       <div class="modal">
         <button type="button" class="modal-open">
           <svg class="icon-modal" width="8" height="8">
